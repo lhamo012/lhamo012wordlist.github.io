@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/wordstyle.css">
+        <script src="/static/app.js"></script>
+        <link rel="icon" href="data:;base64,=">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!–– todo: make nav bar-->
+        {% block navbar %}
+        <nav>
+            <h1>Word Finder Tseki Lhamo</h1>
+        </nav>
+        {% endblock %}
+
+        {% block content %}
+        default content
+        {% endblock %}
+    </body>
+    {% block footer %}
+    <footer>
+        <h5>GitHub Link <a href="https://github.com/lhamo012/lhamo012wordlist.github.io">https://github.com/lhamo012/lhamo012.github.io</a> </h5>
+    </footer>
+    {% endblock %}
+</html>
