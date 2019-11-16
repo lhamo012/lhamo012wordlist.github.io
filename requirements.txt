@@ -11,7 +11,8 @@ decorator==4.3.2
 defusedxml==0.5.0
 entrypoints==0.3
 Flask==1.1.1
-gunicorn==19.7.1
+Flask-WTF==0.14.2
+gunicorn
 idna==2.8
 ipykernel==5.1.0
 ipython==7.2.0
@@ -61,3 +62,4 @@ wcwidth==0.1.7
 webencodings==0.5.1
 Werkzeug==0.16.0
 widgetsnbextension==3.4.2
+WTForms==2.2.1
