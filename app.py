@@ -5,8 +5,7 @@ from flask_wtf.csrf import CSRFProtect
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, IntegerField
 from wtforms.validators import Regexp, NumberRange, Optional, Required
-import re
-import config
+import os 
 
 class RequiredIf(object):
     # a validator which makes a field required if
@@ -99,7 +98,8 @@ def letters_2_words():
 
 @app.route('/proxy/<var>', methods=['GET'])
 def proxy(var):
-    result = requests.get('https://www.dictionaryapi.com/api/v3/references/collegiate/json/'+var+'?key='+ config.api_key)
+    result = requests.get('https://www.dictionaryapi.com/api/v3/references/collegiate/json/'+var+'?key='+ os.environ["PROJECT_API_KEY"])
+    
     resp = Response(result.text)
 
     if result.status_code != 200:
