@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+    {% for word in wordlist: %}
+    	<div class="wordbox">
+    		<h1 class="wordclass" id="selectword" onclick="wordClicked(this)">{{ word }}</h1>
+  		</div>
+	{% endfor %}
+	<!-- Modal Popup -->
+	<div id="myModal" class="modal">
+  		<div class="modal-content">
+  			<!-- Close symbol -->
+    		<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    		<p id="test">Some text in the Modal..</p>
+  		</div>
+	</div>
+	</main>
+{% endblock %}

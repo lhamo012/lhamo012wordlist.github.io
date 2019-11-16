@@ -1,0 +1,53 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: yellow;
+}
+
+.wordbox {
+    text-align: center;
+    border: solid white;
+    margin: 3px;
+}
+
+footer {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: lightblue;
+   text-align: center;
+}
+
+/* The Modal Popup */
+.modal {
+  display: none; 
+  position: fixed; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.1); 
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: lightblue;
+  margin: auto;
+  padding: 20px;
+  width: 70%;
+}
+
+/* Close Symbol */
+.close {
+  float: right;
+  font-size: 30px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
