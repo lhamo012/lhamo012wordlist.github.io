@@ -10,6 +10,7 @@ main {
     margin: 3px;
 }
 
+
 footer {
    position: absolute;
    left: 0;
@@ -50,4 +51,12 @@ footer {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+nav {
+  background-color: lightblue;
+}
+
+nav span{
+  float: right;
 }
