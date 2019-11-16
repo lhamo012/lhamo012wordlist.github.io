@@ -1,6 +1,9 @@
 # Mac
 .DS_Store
 
+# api key
+config.py
+
 __pycache__
 *.pyc
 # api keys
